@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktirajte Cvećaru Ina - Imate pitanja ili zahteve? Ovde smo da vam pomognemo.">
+    <meta name="keywords" content="kontakt, cvećara Ina, kontakt informacije">
+    <title>Kontakt</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!---zaglavlje --->
+
+  <header>
+    <a href="#" class="logo">
+        <img src="img/logo.png">
+    </a>
+
+    <ul class="navbar">
+        <li><a href="index.html"><img src="img/pocetna.png" alt="Ikona pocetne">Početna</a></li>
+        <li class="dropdown">
+            <a href="prodavnica.html"><img src="img/prodavnica.png" alt="Ikona prodavnice">Prodavnica</a>
+            <div class="dropdown-content">
+                <div class="sub-menu">
+                    <a href="#">Rezano cveće</a>
+                    <div class="sub-sub-menu">
+                        <a href="#">Ljiljani</a>
+                        <a href="#">Orhideje</a>
+                        <a href="#">Tulipani</a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <a href="#">Ruže</a>
+                    <div class="sub-sub-menu">
+                        <a href="#">Rezane ruže</a>
+                        <a href="#">Box ruže</a>
+                        <a href="#">Sadnice ruža</a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <a href="#">Cvetni aranžmani</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="onama.html"><img src="img/o_nama.png" alt="Ikona o nama">O nama</a></li>
+        <li><a href="novosti.html"><img src="img/novosti.png" alt="Ikona novosti">Novosti</a></li>
+        <li><a href="kontakt.html"><img src="img/kontakt.png" alt="Ikona kontakt">Kontakt</a></li>
+    </ul>
+
+    <div class="h-icons">
+        <a href="kontakt.html"><img src="img/pozovi.png" alt="Ikona poziv"></a>
+        <a href="korpa.html"><img src="img/korpa.png" alt="Ikona korpa"></a>
+        <a href="#"><img src="img/omiljeno.png" alt="Ikona omiljeno"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+
+
+  <section class="kontakt">
+    <div class="kontakt-text">
+        <h1>Kontaktirajte nas<br></h1>
+    </div>
+  </section>
+
+
+  <div class="naslov">
+    <h2>Kontakt podaci</h2>
+</div>
+
+<section class="contact-info">
+    <h2>Podaci o Prodavnici</h2>
+    <div class="store-info">
+        <p><strong>Adresa:</strong> Vaša adresa</p>
+        <p><strong>Telefon:</strong> Vaš broj telefona</p>
+        <p><strong>Email:</strong> Vaša email adresa</p>
+        <p><strong>Radno Vreme:</strong> Radno vreme prodavnice</p>
+    </div>
+</section>
+
+
+<!-- Prikaz Google mape -->
+<div class="store-location">
+    <h3>Gde Nas Možete Naći:</h3> <!-- Dodajte ovu liniju za naslov mape -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d12.3456789!3d12.3456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDA0JzA3LjciTiAxMsKwMjgnMjYuMCJF!5e0!3m2!1sen!2sus!4v1631547020506!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+
+
+
+<section class="contact-form">
+    <h2>Kontaktirajte Nas</h2>
+    <form action="process_contact.php" method="post" id="contact-form">
+        <div class="form-group">
+            <label for="ime_prezime">Ime i Prezime:</label>
+            <input type="text" id="ime_prezime" name="ime_prezime" required>
+            <p class="error-message" id="ime_prezime-error"></p>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Adresa:</label>
+            <input type="email" id="email" name="email" required>
+            <p class="error-message" id="email-error"></p>
+        </div>
+        <div class="form-group">
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon" required>
+            <p class="error-message" id="telefon-error"></p>
+        </div>
+        <div class="form-group">
+            <label for="poruka">Poruka:</label>
+            <textarea id="poruka" name="poruka" rows="4" required></textarea>
+            <p class="error-message" id="poruka-error"></p>
+        </div>
+        <button type="submit">Pošaljite Poruku</button>
+    </form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--kontakt-->
+  <section class="contact">
+    <div class="contact-box">
+        <h4>MOJ NALOG</h4>
+        <li><a href="#">Moj nalog</a></li>
+        <li><a href="#">Kupovina</a></li>
+        <li><a href="#">Kontaktiraj nas</a></li>
+        <li><a href="#">Korpa</a></li>
+        <li><a href="#">Lista želja</a></li>
+    </div>
+
+    <div class="contact-box">
+        <h4>ISTAKNUTI LINKOVI</h4>
+        <li><a href="#">Prodavnice</a></li>
+        <li><a href="#">Praćenje porudžbine</a></li>
+        <li><a href="#">Vodič veličina</a></li>
+        <li><a href="#">Moj nalog</a></li>
+        <li><a href="#">Često postavljena pitanja</a></li>
+    </div>
+
+    <div class="contact-box">
+        <h4>INFORMACIJE</h4>
+        <li><a href="#">Pravila privatnosti</a></li>
+        <li><a href="#">O nama</a></li>
+        <li><a href="#">Karijera</a></li>
+        <li><a href="#">Informacije o dostavi</a></li>
+        <li><a href="#">Uslov i odredba</a></li>
+    </div>
+
+    <div class="contact-box">
+        <h4>KORISNIČKE USLUGE</h4>
+        <li><a href="#">Pravilnik dostave</a></li>
+        <li><a href="#">Pomoć i kontakt</a></li>
+        <li><a href="#">Povrat i refundacija</a></li>
+        <li><a href="#">Online prodavnica</a></li>
+        <li><a href="#">Uslovi i odredbe</a></li>
+    </div>
+
+    <div class="contact-box">
+        <h4>Ina</h4>
+        <h5>Povežite se sa nama</h5>
+        <div class="social">
+            <a href="#"><img src="img/fac.png" alt="Facebook"></a>
+            <a href="#"><img src="img/inst.png" alt="Instagram"></a>
+            <a href="#"><img src="img/twitt.png" alt="Twitter"></a>
+        </div>
+    </div>
+
+</section>
+
+<!--scrool-->
+
+<a href="#" class="scroll-top"><img src="img/goreee.png" alt="Scroll to Top"></a>
+
+<div class="end-text">
+    <p>2018-2023 Cvećara Ina. Sva prava zadržana.</p>
+</div>
+
+
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
